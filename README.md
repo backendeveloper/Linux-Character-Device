@@ -1,8 +1,8 @@
 
- Table of contents
+Linux Character Device Driver
 ===============
 
-[TOC]
+
 > **Note:**
 
 >   The post helps understand how to write a device driver, the significance of a device file and its role in the interaction between a user program and device driver.
