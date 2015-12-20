@@ -84,7 +84,7 @@ The driver code
 Given below is the code of the device driver
 
 
-![cover-image](https://goo.gl/H7zSi0)
+[Imgur](http://i.imgur.com/t1tn3da.gif)
 *Device Driver Code*
 
 
@@ -93,7 +93,7 @@ Compiling the driver
 ------------------------
 A Linux module cannot just be compiled the way we compile normal C files.  cc filename.c won’t work. Compiling a Linux module is a separate process by its own. We use the help of kernel Makefile for compilation. The makefile we will be using is.
 
-![cover-image](https://goo.gl/NxfsiY)
+[Imgur](http://i.imgur.com/wAYM9fV.png)
 *makefile for module compilation*
 
 Here, we are making use of the **kbuild** mechanism used for compiling the kernel.
@@ -106,10 +106,10 @@ Once the compilation is complete, we can use either **insmod** or **modprobe** c
 
 To test if the driver has been loaded successfully, do ***cat /proc/modules and cat /proc/devices***.  We should see our module name in the first case and device name in the second.
 
-![cover-image](https://goo.gl/64F0en)
+[Imgur](http://i.imgur.com/oabfAzy.png)
 *cat /proc/modules*
 
-![cover-image](https://goo.gl/RiR5lp)
+[Imgur](http://i.imgur.com/yIeN5as.png)
 *cat /proc/modules*
 
 To unload the driver, use **rmmod** command. (***rmmod myDev.ko***)
@@ -119,19 +119,19 @@ Testing the driver
 ---------------------
 To test the driver, we try writing something to the device file and then reading it. For example,
 
-![cover-image](https://goo.gl/eZpAZX)
+[Imgur](http://i.imgur.com/dpdSmHT.png)
 *Testing the driver*
 
 See the output. (The reason for the ‘ugly’ output is because echo automatically writes a newline character to the end of string. When the driver reverses the string, the newline is shifted to the front of the string and there is no newline at the end. Hence the result being ‘ugly’)
 
 To see how this can be done from our program, I wrote a demo program given below
 
-![cover-image](https://goo.gl/kpgf3W)
+[Imgur](http://i.imgur.com/PncaPdn.png)
 *Interacting with the driver*
 
 Compile it normally(or run **make test**) and run **./test  some_string**  and see the output.
 
-![cover-image](https://goo.gl/qQPHZC)
+[Imgur](http://i.imgur.com/PncaPdn.png)
 *Testing the driver*
 
 > **Note:**
