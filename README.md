@@ -131,7 +131,7 @@ To see how this can be done from our program, I wrote a demo program given below
 
 Compile it normally(or run **make test**) and run **./test  some_string**  and see the output.
 
-![Imgur](http://i.imgur.com/PncaPdn.png)
+![Imgur](http://i.imgur.com/sB83VaF.png)
 *Testing the driver*
 
 > **Note:**
