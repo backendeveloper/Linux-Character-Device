@@ -84,7 +84,7 @@ The driver code
 Given below is the code of the device driver
 
 
-[Imgur](http://i.imgur.com/t1tn3da.gif)
+![Imgur](http://i.imgur.com/t1tn3da.gif)
 *Device Driver Code*
 
 
